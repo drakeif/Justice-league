@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@300;400;500;700&display=swap');
+@import 'vars';
+@import 'media';
+@import 'scrollbar';
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+*,*:before,*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: $wh;
+    &.active {
+        overflow: hidden;
+    }
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+h1 {
+    font-family: 'Marcellus', serif;
+    font-size: 8rem;
+    line-height: 1.2;
+    color: $wh;
+}
+.container {
+    max-width: 1470px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.btn {
+    padding: 1.5rem 5rem;
+    border: 2px solid $blue;
+    outline: none;
+    color: $wh;
+    font-size: 1.6rem;
+    text-align: center;
+    background: $bg;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: .2s linear;
+    /* &.play {
+       position: relative;
+        &:before {
+            display: block;
+            content: '';
+            background: url('../img/svg/play.svg') no-repeat left / cover;
+            width: 1.4rem;
+            height: 1.8rem;
+            position: absolute;
+            left: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            @include media(768) {
+                left: 1rem;
+                width: 1rem;
+                height: 1.2rem;
+            }
+        }
+    } */
+    &:hover {
+        border: 2px solid $wh;
+    }
+    @include media(768) {
+        padding: 1rem 2.5rem;
+    }
+}
+@import 'header';
+@import 'intro';
+

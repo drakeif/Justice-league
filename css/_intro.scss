@@ -1,0 +1,115 @@
+.intro {
+    padding: 22rem 0 9rem 0;
+    background: $bl url('../img/banner.jpg') no-repeat top right;
+    border-bottom: .1rem solid $bl-2;
+    @include media(768) {
+        padding: 10rem 0 5rem 0;
+        background-position: center top;
+        background-size: cover;
+    }
+    @include media(500) {
+        padding: 10rem 0 2.5rem 0;
+    }
+    &__wrap {
+        max-width: 54rem;
+        @include media(768) {
+            max-width: 100%;
+         }
+    }
+    &__title {
+       @include media(768) {
+           font-size: 5rem;
+        }
+        @include media(768) {
+            font-size: 4rem;
+        }
+    }
+    &__rating {
+        margin-top: 4rem;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        column-gap: 4rem;
+        @include media(768) {
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            column-gap: 3rem;
+        }
+        @include media(500) {
+            font-size: 1.3rem;
+        }
+        &_time {
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+            p:nth-child(2) {
+                padding: 0.2rem 1rem;
+                border: 1px solid $blue;
+                border-radius: 1rem;
+            }
+            @include media(500) {
+                column-gap: 1rem;
+            }
+        }
+        &_star {
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+            @include media(500) {
+                column-gap: 1rem;
+            }
+        }
+    }
+    &__describe {
+        color: $text;
+        margin-top: 2.5rem;
+        @include media(768) {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+        }
+        @include media(500) {
+            font-size: 1.3rem;
+        }
+    }
+    &__btn {
+        margin-top: 3.5rem;
+        display: flex;
+        align-items: center;
+        column-gap: 3rem;
+        @include media(768) {
+            margin-top: 2rem;
+            column-gap: 2rem;
+        }
+        @include media(500) {
+            margin-top: 2rem;
+            column-gap: 1.5rem;
+        }
+        &-info {
+            padding: 1.5rem 5rem;
+            border: 2px solid $wh;
+            outline: none;
+            background: $wh;
+            color: $bl;
+            font-size: 1.6rem;
+            border-radius: 10rem;
+            cursor: pointer;
+            transition: .2s linear;
+            &:hover {
+                border: 2px solid $blue;
+                background: transparent;
+                color: $wh;
+            }
+            @include media(768) {
+                padding: 1rem 2.5rem;
+            }
+        }
+        button {
+            font-family: 'Mulish', sans-serif;
+            font-size: 1.8rem;
+            white-space: nowrap;
+            @include media(768) {
+                font-size: 1.4rem;
+            }
+        }
+    }  
+}
