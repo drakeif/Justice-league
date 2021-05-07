@@ -1,0 +1,69 @@
+.modal {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+    background: rgba($bl, .8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &__wrap {
+        display: flex;
+        align-items: center;
+        max-width: 96rem;
+        height: 100%;
+        video {
+            width: 100%;
+            height: auto;
+            border: none;
+            outline: none;
+        }
+        iframe {
+            width: 100rem;
+            height: 100%;
+            @include media(768) {
+                width: 60rem;
+            }
+            @include media(500) {
+                width: 30rem;
+            }
+        }
+    }
+    &__close {
+        display: block;
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $wh;
+            transition: .2s linear;
+            pointer-events: none;
+            &:nth-child(1) {
+                top: 50%;
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                top: 50%;
+                transform: rotate(-45deg);
+            }
+        }
+        &:hover {
+            span {
+                background: $bg; 
+            }
+        }
+    }
+    &.active {
+        display: flex;        
+    }
+}

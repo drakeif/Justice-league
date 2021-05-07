@@ -35,9 +35,9 @@ h1 {
     color: $wh;
 }
 .container {
-    max-width: 1470px;
+    max-width: 147rem;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     margin: 0 auto;
 }
 .btn {
@@ -79,4 +79,5 @@ h1 {
 }
 @import 'header';
 @import 'intro';
+@import 'modal';
 

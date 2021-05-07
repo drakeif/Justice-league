@@ -30,7 +30,6 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span></span>
                 </div>
             </div>
         </div>
@@ -56,13 +55,33 @@
                     </p>
                 </div>
                 <div class="intro__btn">
-                    <button class="btn">&#9655 Watch</button>
-                    <button class="intro__btn-info">More Information</button>
+                    <button class="btn" id="watch">&#9655 Watch</button>
+                    <button class="intro__btn-info" id="moreInfoOpen">More Information</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal__wrap">
+            <video src="./video/justice_league.mp4" controls id="video"></video>
+            <div class="modal__close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="moreInfo">
+        <div class="modal__wrap">
+            <iframe src="https://en.wikipedia.org/wiki/Zack_Snyder%27s_Justice_League"></iframe>
+            <div class="modal__close" id="moreInfoClose">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
     <script src="js/app.js"></script>
 </body>
 </html>

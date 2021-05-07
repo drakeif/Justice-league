@@ -17,13 +17,51 @@ const navBtn = document.querySelectorAll('.header__nav_link');
 document.querySelector('.header__nav_link:nth-child(1)').click();
 
 // BURGER MENU
-const burger = document.querySelector('.header__btn');
-const body = document.getElementById('body');
-const nav = document.querySelector('.header__nav');
-const closeBtn = document.querySelector('.intro__btn');
+const burger = document.querySelector('.header__btn'),
+      body = document.getElementById('body'),
+      nav = document.querySelector('.header__nav'),
+      closeBtn = document.querySelector('.intro__btn');
 
 burger.addEventListener('click', (e) => {
     e.target.classList.toggle('active');
     body.classList.toggle('active');
     nav.classList.toggle('active');
 });
+
+const closeLink = document.querySelectorAll('.header__nav');
+
+closeLink.forEach(el => el.addEventListener('click', () => {
+    burger.classList.remove('active');
+    body.classList.remove('active');
+    nav.classList.remove('active');
+}));
+
+// MODAL
+const modal = document.querySelector('.modal'),
+      closeModal = document.querySelector('.modal__close'),
+      watch = document.getElementById('watch'),
+      video = document.getElementById('video'),
+      moreInfo = document.getElementById('moreInfo'),
+      moreInfoOpen = document.getElementById('moreInfoOpen'),
+      moreInfoClose = document.getElementById('moreInfoClose');
+
+        watch.addEventListener('click', () => {
+            modal.classList.add('active');
+            body.classList.add('active');
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active');
+            body.classList.remove('active');
+            video.pause();
+        });
+
+        moreInfoOpen.addEventListener('click', () => {
+            moreInfo.classList.add('active');
+            body.classList.add('active');
+        });
+
+        moreInfoClose.addEventListener('click', () => {
+            moreInfo.classList.remove('active');
+        });
+
