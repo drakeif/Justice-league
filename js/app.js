@@ -65,3 +65,22 @@ const modal = document.querySelector('.modal'),
             moreInfo.classList.remove('active');
         });
 
+// HEADER
+
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+
+    header.style.top = value * 0.7 + 'px';
+});
+
+window.onscroll = () => {
+    if(window.pageYOffset > 400) {
+        header.classList.add('active');
+        header.style.top = 0 + 'px';
+    }
+    else {
+        header.classList.remove('active');
+    }
+};

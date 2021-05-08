@@ -89,10 +89,10 @@ h1 {
       padding: 1rem 2.5rem; } }
 
 .header {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   background: #000000;
   width: 100%;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0; }
@@ -241,7 +241,36 @@ h1 {
         opacity: 0;
         -webkit-transform: translateX(-100%);
                 transform: translateX(-100%); }
+  .header.active {
+    padding: .5rem 0;
+    position: fixed;
+    -webkit-animation: header-fixed .3s linear;
+            animation: header-fixed .3s linear; }
+    .header.active .header__logo {
+      max-width: 12rem; }
+      @media only screen and (max-width: 768px) {
+        .header.active .header__logo {
+          max-width: 10rem;
+          z-index: 11; } }
+      @media only screen and (max-width: 500px) {
+        .header.active .header__logo {
+          max-width: 8rem; } }
 
+@-webkit-keyframes header-fixed {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes header-fixed {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 .intro {
   padding: 22rem 0 8rem 0;
   background: #000000 url("../img/banner.jpg") no-repeat top right;
@@ -440,5 +469,10 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+
+.qwerty {
+  background: -webkit-gradient(linear, right top, left top, from(#26FFF2), to(#326CFF));
+  background: linear-gradient(to left, #26FFF2, #326CFF);
+  min-height: 2000px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,8 @@
 .header {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     background: $bl;
     width: 100%;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
@@ -151,5 +151,28 @@
                 }
             }
         }
+    }
+    &.active {
+        padding: .5rem 0;
+        position: fixed;
+        animation: header-fixed .3s linear;
+        .header__logo {
+            max-width: 12rem;
+            @include media(768) {
+                max-width: 10rem;
+                z-index: 11;
+             }
+             @include media(500) {
+                 max-width: 8rem;
+             }
+        }
+    }
+}
+@keyframes header-fixed {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
     }
 }
