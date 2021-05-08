@@ -66,7 +66,6 @@ const modal = document.querySelector('.modal'),
         });
 
 // HEADER
-
 const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
@@ -75,7 +74,7 @@ window.addEventListener('scroll', () => {
     header.style.top = value * 0.7 + 'px';
 });
 
-window.onscroll = () => {
+window.addEventListener('scroll', () => {
     if(window.pageYOffset > 400) {
         header.classList.add('active');
         header.style.top = 0 + 'px';
@@ -83,4 +82,4 @@ window.onscroll = () => {
     else {
         header.classList.remove('active');
     }
-};
+});
