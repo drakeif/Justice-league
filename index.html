@@ -17,9 +17,9 @@
                     <img src="./img/svg/logo.svg" alt="logo">
                 </div>
                 <nav class="header__nav">
-                    <a class="header__nav_link" href="#!">Home</a>
-                    <a class="header__nav_link" href="#!">TV Shows</a>
-                    <a class="header__nav_link" href="#!">Movies</a>
+                    <a class="header__nav_link" href="#home">Home</a>
+                    <a class="header__nav_link" href="#shows">TV Shows</a>
+                    <a class="header__nav_link" href="#movies">Movies</a>
                     <a class="header__nav_link" href="#!">Series</a>
                 </nav>
                 <div class="header__social">
@@ -36,7 +36,7 @@
         </div>
     </header>
     <!-- INTRO -->
-    <div class="intro">
+    <div class="intro" id="home">
         <div class="container">
             <div class="intro__wrap">
                 <h1 class="intro__title">Zack Snyder's Justice League</h1>
@@ -63,9 +63,66 @@
         </div>
     </div>
 
-    <div class="qwerty"></div>
+    <div class="trending">
+        <div class="container">
+            <div class="trending__shows" id="shows">
+                <a href="#!" class="trending__shows_title">
+                    Trending TV Shows
+                </a>
 
-    <!-- MODAL -->
+                <div class="trending__posters">
+                    <div class="trending__posters_item" title="AFTER">
+                        <img src="./img/posters/shows/6.png" alt="after">
+                    </div>
+                    <div class="trending__posters_item" title="eMANcipation">
+                        <img src="./img/posters/shows/1.png" alt="emancipation">
+                    </div>
+                    <div class="trending__posters_item" title="DUNKIRK">
+                        <img src="./img/posters/shows/2.png" alt="dunkirk">
+                    </div>
+                    <div class="trending__posters_item" title="THE ENORMITY OF LIFE">
+                        <img src="./img/posters/shows/3.png" alt="the enormity of life">
+                    </div>
+                    <div class="trending__posters_item" title="VANITAS">
+                        <img src="./img/posters/shows/4.png" alt="vanitas">
+                    </div>
+                    <div class="trending__posters_item" title="SOMETHING LIKE PERFECT">
+                        <img class="trending--item" src="./img/posters/shows/5.png" alt="something like perfect">
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending__movies" id="movies">
+                <a href="#!" class="trending__shows_title">
+                    Trending TV Movies
+                </a>
+
+                <div class="trending__posters">
+                    <div class="trending__posters_item" title="MATURING YOUTH">
+                        <img src="./img/posters/movies/1.png" alt="maturing youth">
+                    </div>
+                    <div class="trending__posters_item" title="LEAP YEAP">
+                        <img class="trending--item" src="./img/posters/movies/2.png" alt="leap yeap">
+                    </div>
+                    <div class="trending__posters_item" title="THE CURSE OF OAK ISLAND">
+                        <img src="./img/posters/movies/3.png" alt="the curse of oak island">
+                    </div>
+                    <div class="trending__posters_item" title="STREET LEGAL">
+                        <img src="./img/posters/movies/4.png" alt="streen legal">
+                    </div>
+                    <div class="trending__posters_item" title="INTERLOOK">
+                        <img src="./img/posters/movies/5.png" alt="interlook">
+                    </div>
+                    <div class="trending__posters_item" title="THE BLACK ECHO">
+                        <img src="./img/posters/movies/6.png" alt="the black echo">
+                    </div>
+                </div>
+            </div>
+                <button class="trending__btn">See more</button>
+        </div>
+    </div>
+
+    <!-- MODAL VIDEO -->
     <div class="modal">
         <div class="modal__wrap">
             <video src="./video/justice_league.mp4" controls id="video"></video>
@@ -76,6 +133,7 @@
         </div>
     </div>
 
+    <!-- MODAL WIKI -->
     <div class="modal" id="moreInfo">
         <div class="modal__wrap">
             <iframe src="https://en.wikipedia.org/wiki/Zack_Snyder%27s_Justice_League"></iframe>

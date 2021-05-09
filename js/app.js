@@ -70,7 +70,7 @@ const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-
+   
     header.style.top = value * 0.7 + 'px';
 });
 
