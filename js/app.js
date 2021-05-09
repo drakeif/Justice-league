@@ -43,7 +43,10 @@ const modal = document.querySelector('.modal'),
       video = document.getElementById('video'),
       moreInfo = document.getElementById('moreInfo'),
       moreInfoOpen = document.getElementById('moreInfoOpen'),
-      moreInfoClose = document.getElementById('moreInfoClose');
+      moreInfoClose = document.getElementById('moreInfoClose'),
+      moreMovies = document.getElementById('moreMovies'),
+      moreMoviesOpen = document.getElementById('moreMoviesOpen'),
+      moreMoviesClose = document.getElementById('moreMoviesClose');
 
         watch.addEventListener('click', () => {
             modal.classList.add('active');
@@ -63,6 +66,17 @@ const modal = document.querySelector('.modal'),
 
         moreInfoClose.addEventListener('click', () => {
             moreInfo.classList.remove('active');
+            body.classList.remove('active');
+        });
+
+        moreMoviesOpen.addEventListener('click', () => {
+            moreMovies.classList.add('active');
+            body.classList.add('active');
+        });
+
+        moreMoviesClose.addEventListener('click', () => {
+            moreMovies.classList.remove('active');
+            body.classList.remove('active');
         });
 
 // HEADER
