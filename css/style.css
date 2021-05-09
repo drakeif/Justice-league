@@ -52,7 +52,7 @@ h1 {
 
 .btn {
   padding: 1.5rem 5rem;
-  border: 2px solid #326CFF;
+  border: none;
   outline: none;
   color: #ffffff;
   font-size: 1.6rem;
@@ -83,7 +83,8 @@ h1 {
       }
   } */ }
   .btn:hover {
-    border: 2px solid #ffffff; }
+    -webkit-box-shadow: 0 5px 15px 3px rgba(50, 108, 255, 0.5);
+            box-shadow: 0 5px 15px 3px rgba(50, 108, 255, 0.5); }
   @media only screen and (max-width: 768px) {
     .btn {
       padding: 1rem 2.5rem; } }
