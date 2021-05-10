@@ -787,8 +787,8 @@ h1 {
       font-size: 1.8rem;
       font-weight: 700; }
     .popular__actors_person:hover img {
-      -webkit-box-shadow: 0 3px 10px rgba(50, 108, 255, 0.7);
-              box-shadow: 0 3px 10px rgba(50, 108, 255, 0.7); }
+      -webkit-box-shadow: 0 3px 15px rgba(50, 108, 255, 0.7);
+              box-shadow: 0 3px 15px rgba(50, 108, 255, 0.7); }
 
 .modal {
   display: none;
