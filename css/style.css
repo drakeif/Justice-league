@@ -62,26 +62,7 @@ h1 {
   border-radius: 10rem;
   cursor: pointer;
   -webkit-transition: .2s linear;
-  transition: .2s linear;
-  /* &.play {
-     position: relative;
-      &:before {
-          display: block;
-          content: '';
-          background: url('../img/svg/play.svg') no-repeat left / cover;
-          width: 1.4rem;
-          height: 1.8rem;
-          position: absolute;
-          left: 2rem;
-          top: 50%;
-          transform: translateY(-50%);
-          @include media(768) {
-              left: 1rem;
-              width: 1rem;
-              height: 1.2rem;
-          }
-      }
-  } */ }
+  transition: .2s linear; }
   .btn:hover {
     -webkit-box-shadow: 0 5px 15px 3px rgba(50, 108, 255, 0.5);
             box-shadow: 0 5px 15px 3px rgba(50, 108, 255, 0.5); }
@@ -536,6 +517,253 @@ h1 {
     .trending__btn:hover {
       -webkit-box-shadow: 0 7px 15px 3px rgba(38, 255, 242, 0.8);
               box-shadow: 0 7px 15px 3px rgba(38, 255, 242, 0.8); }
+
+.popular {
+  padding: 6rem 0;
+  background: #000000; }
+  @media only screen and (max-width: 768px) {
+    .popular {
+      padding: 4rem 0; } }
+  @media only screen and (max-width: 500px) {
+    .popular {
+      padding: 3rem 0; } }
+  .popular__genres {
+    margin-bottom: 7rem; }
+    @media only screen and (max-width: 768px) {
+      .popular__genres {
+        margin-bottom: 5rem; } }
+    @media only screen and (max-width: 500px) {
+      .popular__genres {
+        margin-bottom: 3rem; } }
+    .popular__genres_title {
+      display: block;
+      position: relative;
+      max-width: 25rem;
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #ffffff;
+      cursor: pointer;
+      margin-left: 1.7rem;
+      margin-bottom: 4rem; }
+      @media only screen and (max-width: 768px) {
+        .popular__genres_title {
+          font-size: 2.2rem;
+          max-width: 21rem;
+          margin-bottom: 3rem; } }
+      @media only screen and (max-width: 500px) {
+        .popular__genres_title {
+          font-size: 2rem;
+          max-width: 18rem;
+          margin-bottom: 2rem; } }
+      .popular__genres_title:before {
+        display: block;
+        content: '';
+        width: 0.5rem;
+        height: 100%;
+        background: -webkit-gradient(linear, right top, left top, from(#26FFF2), to(#326CFF));
+        background: linear-gradient(to left, #26FFF2, #326CFF);
+        border-radius: 1rem;
+        position: absolute;
+        top: 0;
+        left: -1.5rem; }
+      .popular__genres_title::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        background: url("../img/right-arrow.png") no-repeat right/cover;
+        -webkit-transition: .2s linear;
+        transition: .2s linear; }
+        @media only screen and (max-width: 500px) {
+          .popular__genres_title::after {
+            width: 1.5rem;
+            height: 1.5rem; } }
+      .popular__genres_title:hover::after {
+        right: -2%; }
+    .popular__genres_items {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(24rem, 34rem));
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-column-gap: 1rem;
+              column-gap: 1rem;
+      row-gap: 3rem; }
+      @media only screen and (max-width: 1400px) {
+        .popular__genres_items {
+          grid-template-columns: repeat(3, minmax(24rem, 34rem));
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
+      @media only screen and (max-width: 1000px) {
+        .popular__genres_items {
+          grid-template-columns: repeat(2, minmax(24rem, 34rem));
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          row-gap: 2rem; } }
+      @media only screen and (max-width: 600px) {
+        .popular__genres_items {
+          grid-template-columns: repeat(1, minmax(24rem, 34rem));
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
+    .popular__genres_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: 34rem;
+      height: 20rem;
+      border-radius: 2rem;
+      cursor: pointer; }
+      .popular__genres_item:nth-child(1) {
+        background: linear-gradient(135deg, #FD093F, #F383F1); }
+      .popular__genres_item:nth-child(2) {
+        background: linear-gradient(135deg, #0FFFDA, #3CDB77); }
+      .popular__genres_item:nth-child(3) {
+        background: linear-gradient(135deg, #B936FF, #57DEDA); }
+      .popular__genres_item:nth-child(4) {
+        background: linear-gradient(135deg, #FD093F, #FCCB1A); }
+      .popular__genres_item:nth-child(5) {
+        background: linear-gradient(135deg, #FF6472, #FDA75D); }
+      .popular__genres_item:nth-child(6) {
+        background: linear-gradient(135deg, #13547A, #80D0C7); }
+      .popular__genres_item:nth-child(7) {
+        background: linear-gradient(135deg, #FFF77B, #FFBF42); }
+      .popular__genres_item:nth-child(8) {
+        background: linear-gradient(135deg, #1FA2FF, #1F535C); }
+    .popular__genres_content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      row-gap: 1rem; }
+      .popular__genres_content img {
+        width: 8rem;
+        height: 8rem; }
+      .popular__genres_content h3 {
+        font-size: 2rem;
+        font-weight: 700; }
+  .popular__actors_title {
+    display: block;
+    position: relative;
+    max-width: 40rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 1.7rem;
+    margin-bottom: 4rem; }
+    @media only screen and (max-width: 768px) {
+      .popular__actors_title {
+        font-size: 2.2rem;
+        max-width: 32rem;
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 500px) {
+      .popular__actors_title {
+        font-size: 2rem;
+        max-width: 20rem;
+        margin-bottom: 2rem; } }
+    .popular__actors_title:before {
+      display: block;
+      content: '';
+      width: 0.5rem;
+      height: 100%;
+      background: -webkit-gradient(linear, right top, left top, from(#26FFF2), to(#326CFF));
+      background: linear-gradient(to left, #26FFF2, #326CFF);
+      border-radius: 1rem;
+      position: absolute;
+      top: 0;
+      left: -1.5rem; }
+    .popular__actors_title::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 2rem;
+      height: 2rem;
+      background: url("../img/right-arrow.png") no-repeat right/cover;
+      -webkit-transition: .2s linear;
+      transition: .2s linear; }
+      @media only screen and (max-width: 500px) {
+        .popular__actors_title::after {
+          width: 1.5rem;
+          height: 1.5rem; } }
+    .popular__actors_title:hover::after {
+      right: -2%; }
+  .popular__actors_people {
+    display: grid;
+    grid-template-columns: repeat(6, 19rem);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media only screen and (max-width: 1300px) {
+      .popular__actors_people {
+        grid-template-columns: repeat(3, minmax(10rem, 19rem));
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-column-gap: 2rem;
+                column-gap: 2rem;
+        row-gap: 3rem; } }
+    @media only screen and (max-width: 768px) {
+      .popular__actors_people {
+        grid-template-columns: repeat(2, 19rem);
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        row-gap: 2rem; } }
+    @media only screen and (max-width: 500px) {
+      .popular__actors_people {
+        grid-template-columns: repeat(1, 19rem);
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        row-gap: 1rem; } }
+  .popular__actors_person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 2rem;
+    width: 19rem;
+    height: 25rem;
+    overflow: hidden; }
+    .popular__actors_person img {
+      width: 30rem;
+      height: 19rem;
+      border-radius: 50%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: top;
+         object-position: top; }
+    .popular__actors_person h3 {
+      font-size: 1.8rem;
+      font-weight: 700; }
 
 .modal {
   display: none;

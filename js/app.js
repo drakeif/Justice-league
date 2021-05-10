@@ -47,7 +47,7 @@ const modal = document.querySelector('.modal'),
       moreMovies = document.getElementById('moreMovies'),
       moreMoviesOpen = document.getElementById('moreMoviesOpen'),
       moreMoviesClose = document.getElementById('moreMoviesClose');
-
+        // VIDEO
         watch.addEventListener('click', () => {
             modal.classList.add('active');
             body.classList.add('active');
@@ -58,7 +58,7 @@ const modal = document.querySelector('.modal'),
             body.classList.remove('active');
             video.pause();
         });
-
+        // MORE INFO
         moreInfoOpen.addEventListener('click', () => {
             moreInfo.classList.add('active');
             body.classList.add('active');
@@ -68,7 +68,7 @@ const modal = document.querySelector('.modal'),
             moreInfo.classList.remove('active');
             body.classList.remove('active');
         });
-
+        // MORE MOVIES
         moreMoviesOpen.addEventListener('click', () => {
             moreMovies.classList.add('active');
             body.classList.add('active');
