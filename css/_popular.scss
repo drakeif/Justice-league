@@ -95,6 +95,7 @@
             height: 20rem;
             border-radius: 2rem;
             cursor: pointer;
+            transition: .2s linear;
             &:nth-child(1) {
                 background: $genres-1;
             }
@@ -118,6 +119,9 @@
             }
             &:nth-child(8) {
                 background: $genres-8;
+            }
+            &:hover {
+                box-shadow: 0 3px 10px (rgba($sky, .7));
             }
         }
         &_content {
@@ -216,17 +220,21 @@
             row-gap: 2rem;
             width: 19rem;
             height: 25rem;
-            overflow: hidden;
+            cursor: pointer;
             img {
                 width: 30rem;
                 height: 19rem;
                 border-radius: 50%;
                 object-fit: cover;
                 object-position: top;
+                transition: .2s linear;
             }
             h3 {
                 font-size: 1.8rem;
                 font-weight: 700;
+            }
+            &:hover img {
+                box-shadow: 0 3px 10px rgba($blue, .7);
             }
         }
     }
