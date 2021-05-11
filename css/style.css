@@ -473,7 +473,8 @@ h1 {
         -ms-flex-pack: distribute;
             justify-content: space-around;
         row-gap: 2rem; } }
-    .trending__posters_item img {
+    .trending__posters_item cu
+    img {
       -webkit-transition: .3s linear;
       transition: .3s linear; }
     .trending__posters_item:hover img {
@@ -789,6 +790,103 @@ h1 {
     .popular__actors_person:hover img {
       -webkit-box-shadow: 0 3px 15px rgba(50, 108, 255, 0.7);
               box-shadow: 0 3px 15px rgba(50, 108, 255, 0.7); }
+
+.soon {
+  padding: 6rem 0;
+  background: #000000; }
+  @media only screen and (max-width: 768px) {
+    .soon {
+      padding: 3rem 0; } }
+  @media only screen and (max-width: 500px) {
+    .soon {
+      padding: 1.5rem 0; } }
+  .soon__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    height: 34rem;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 1000px) {
+      .soon__wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    .soon__wrap_left {
+      width: 50%;
+      height: 100%;
+      background: url("../img/bunny-poster.jpg") no-repeat center/cover;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem; }
+      @media only screen and (max-width: 1000px) {
+        .soon__wrap_left {
+          width: 100%;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0; } }
+    .soon__wrap_right {
+      background: -webkit-gradient(linear, right top, left top, from(#0D1A73), to(#000000));
+      background: linear-gradient(to left, #0D1A73, #000000);
+      width: 50%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      -webkit-box-shadow: 10px 5px 15px rgba(252, 203, 26, 0.2);
+              box-shadow: 10px 5px 15px rgba(252, 203, 26, 0.2); }
+      @media only screen and (max-width: 1000px) {
+        .soon__wrap_right {
+          width: 100%;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          -webkit-box-shadow: 0 5px 10px rgba(252, 203, 26, 0.2);
+                  box-shadow: 0 5px 10px rgba(252, 203, 26, 0.2); } }
+    .soon__wrap_content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .soon__wrap_content img {
+        max-width: 294px;
+        margin-bottom: 1rem;
+        pointer-events: none; }
+        @media only screen and (max-width: 1000px) {
+          .soon__wrap_content img {
+            width: 50%; } }
+      .soon__wrap_content p {
+        font-size: 6.4rem;
+        font-weight: 700;
+        pointer-events: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
+        @media only screen and (max-width: 1000px) {
+          .soon__wrap_content p {
+            font-size: 4.4rem; } }
+        @media only screen and (max-width: 768px) {
+          .soon__wrap_content p {
+            font-size: 2.8rem; } }
 
 .modal {
   display: none;
