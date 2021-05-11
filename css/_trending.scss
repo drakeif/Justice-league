@@ -1,11 +1,11 @@
 .trending {
-    padding: 6rem 0;
+    padding: 3rem 0;
     background: $bl;
     @include media(768) {
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
     @include media(500) {
-        padding: 3rem 0;
+        padding: 1.5rem 0;
     }
     &__shows {
         &_title {

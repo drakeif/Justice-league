@@ -394,14 +394,14 @@ h1 {
           font-size: 1.4rem; } }
 
 .trending {
-  padding: 6rem 0;
+  padding: 3rem 0;
   background: #000000; }
   @media only screen and (max-width: 768px) {
     .trending {
-      padding: 4rem 0; } }
+      padding: 2rem 0; } }
   @media only screen and (max-width: 500px) {
     .trending {
-      padding: 3rem 0; } }
+      padding: 1.5rem 0; } }
   .trending__shows_title {
     display: block;
     position: relative;
@@ -529,14 +529,14 @@ h1 {
               box-shadow: 0 5px 15px rgba(50, 108, 255, 0.9); }
 
 .popular {
-  padding: 6rem 0;
+  padding: 3rem 0;
   background: #000000; }
   @media only screen and (max-width: 768px) {
     .popular {
-      padding: 4rem 0; } }
+      padding: 2rem 0; } }
   @media only screen and (max-width: 500px) {
     .popular {
-      padding: 3rem 0; } }
+      padding: 1.5rem 0; } }
   .popular__genres {
     margin-bottom: 7rem; }
     @media only screen and (max-width: 768px) {
