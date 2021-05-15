@@ -1096,7 +1096,9 @@ h1 {
         width: 100%;
         border: none;
         outline: none;
-        border-bottom: 1px solid #C2C2C2; }
+        border-bottom: 1px solid #C2C2C2;
+        -webkit-transition: .15s linear;
+        transition: .15s linear; }
         .modal__register_input input::-webkit-input-placeholder {
           font-family: 'Mulish', sans-serif;
           color: #C2C2C2;
@@ -1113,6 +1115,10 @@ h1 {
           font-family: 'Mulish', sans-serif;
           color: #C2C2C2;
           font-size: 1.2rem; }
+        .modal__register_input input:hover {
+          border-bottom: 1px solid rgba(50, 108, 255, 0.7); }
+        .modal__register_input input:focus {
+          border-bottom: 1px solid rgba(38, 255, 242, 0.7); }
       .modal__register_input label {
         color: #C2C2C2;
         font-size: 1.1rem; }
