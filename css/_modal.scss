@@ -63,6 +63,101 @@
                 background: $bg; 
             }
         }
+        &--register {
+            background: rgba($blue, .5);
+            @include media-min(500) {
+                background: none;
+            }
+        }
+    }
+    &__register {
+        padding: 3rem;
+        width: 29rem;
+        height: 51rem;
+        background: $wh;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_form {
+            margin-bottom: 3rem;
+            button {
+                margin-top: 3rem;
+                font-size: 1.4rem;
+                padding: 1rem;
+                min-width: 100%;
+                text-transform: uppercase;
+            }
+        }
+        &_social {
+            p {
+                color: $text;
+                font-size: 1.1rem;
+                text-align: center;
+                font-weight: 400;
+                margin-bottom: 1.5rem;
+            }
+        }
+        &_networks {
+            a {
+                text-decoration: none;
+                img {
+                    width: 3rem;
+                    transition: .15s linear;
+                }
+                &:hover img {
+                   filter: drop-shadow(0px 3px 3px rgba($blue, .7));
+                }
+            }
+        }
+        h3 {
+            color: $bl-2;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        &_input {
+            position: relative;
+            margin-bottom: 1rem;
+            input {
+                padding: 1rem 1rem 1rem 2rem;
+                color: $bl-2;
+                font-family: 'Mulish', sans-serif;
+                font-size: 1.4rem;
+                width: 100%;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid $text;
+                &::placeholder {
+                    font-family: 'Mulish', sans-serif;
+                    color: $text;
+                    font-size: 1.2rem;
+                }
+            }
+            label {
+                color: $text;
+                font-size: 1.1rem;
+            }
+            a {
+                position: absolute;
+                bottom: -2rem;
+                right: 0;
+                display: block;
+                text-decoration: none;
+                color: $text;
+                font-size: 1.1rem;
+                transition: .2s linear;
+                &:hover {
+                    color: rgba($blue, .7);
+                }
+            }
+        }
+        &--user {
+            background: url('../img/svg/input/user.svg') no-repeat left / 12px;
+        }
+        &--password {
+            background: url('../img/svg/input/lock.svg') no-repeat left / 12px;
+        }
     }
     &.active {
         display: flex;        

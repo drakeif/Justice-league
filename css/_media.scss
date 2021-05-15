@@ -3,3 +3,8 @@
         @content;
     }     
 }
+@mixin media-min($w) {
+    @media only screen and (min-width: $w + 'px') {
+        @content;
+    }     
+}

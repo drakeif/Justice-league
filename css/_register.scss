@@ -1,0 +1,71 @@
+.register {
+    padding: 6rem 0;
+    background: $bl;
+    @include media(768) {
+        padding: 3rem 0;
+    }
+    @include media(500) {
+        padding: 1.5rem 0;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: center;
+    }
+    &__content {
+        padding: 0 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        max-width: 122rem;
+        width: 100%;
+        height: 27rem;
+        border-radius: 1rem;
+        background: url('../img/register.jpg') no-repeat center / cover;
+        z-index: 1;
+        @include media(768) {
+            padding: 0 1rem;
+           flex-direction: column;
+           justify-content: center;
+           row-gap: 3rem;
+        }
+        &::after {
+            content: '';
+            display: block;
+            border-radius: 1rem;
+            background: url('../img/register-gradient.png') no-repeat center / cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        h3 {
+            font-size: 6.4rem;
+            font-weight: 700;
+            pointer-events: none;
+            user-select: none;
+            @include media(1200) {
+                font-size: 5rem;
+            }
+            @include media(1000) {
+                font-size: 4.5rem;
+            }
+            @include media(920) {
+                font-size: 3.5rem;
+            }
+            @include media(768) {
+                font-size: 4rem;
+                text-align: center;
+                br {
+                    display: none;
+                }
+            }
+            @include media(500) {
+                font-size: 2.5rem;
+            }
+           
+        }
+    }
+}

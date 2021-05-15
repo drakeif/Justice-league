@@ -46,7 +46,10 @@ const modal = document.querySelector('.modal'),
       moreInfoClose = document.getElementById('moreInfoClose'),
       moreMovies = document.getElementById('moreMovies'),
       moreMoviesOpen = document.getElementById('moreMoviesOpen'),
-      moreMoviesClose = document.getElementById('moreMoviesClose');
+      moreMoviesClose = document.getElementById('moreMoviesClose'),
+      regOpen = document.querySelector('.register__btn'),
+      reg = document.getElementById('reg'),
+      regClose = document.getElementById('regClose');
         // VIDEO
         watch.addEventListener('click', () => {
             modal.classList.add('active');
@@ -78,6 +81,17 @@ const modal = document.querySelector('.modal'),
             moreMovies.classList.remove('active');
             body.classList.remove('active');
         });
+        //REGISTER
+        regOpen.addEventListener('click', () => {
+            reg.classList.add('active');
+            body.classList.add('active');
+            formBtn.innerHTML = 'LOGIN'
+        });
+        regClose.addEventListener('click', () => {
+            reg.classList.remove('active');
+            body.classList.remove('active');
+        });
+
 
 // HEADER
 const header = document.querySelector('.header');
@@ -97,3 +111,14 @@ window.addEventListener('scroll', () => {
         header.classList.remove('active');
     }
 });
+
+// FORM BTN
+formBtn = document.getElementById('formBtn');
+
+formBtn.addEventListener('click', (e) =>{
+    e.target.innerHTML = 'Processing...';
+    setTimeout(() =>{
+       reg.classList.remove('active');
+       body.classList.remove('active');
+      }, 2000);
+})
