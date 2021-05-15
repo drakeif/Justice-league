@@ -85,7 +85,7 @@ const modal = document.querySelector('.modal'),
         regOpen.addEventListener('click', () => {
             reg.classList.add('active');
             body.classList.add('active');
-            formBtn.innerHTML = 'LOGIN'
+            formBtn.innerHTML = 'Sign In'
         });
         regClose.addEventListener('click', () => {
             reg.classList.remove('active');
