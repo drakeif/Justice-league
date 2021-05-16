@@ -15,15 +15,15 @@
         grid-template-columns: repeat(5, minmax(194px, 140px));
         justify-content: space-between;
         column-gap: 1rem;
-        @include media(1030) {
+        @include media(1050) {
             grid-template-columns: repeat(4, minmax(194px, 140px));
             grid-template-rows: repeat(2, auto);
             row-gap: 3rem;
         }
-        @include media(830) {
+        @include media(850) {
             grid-template-columns: repeat(2, minmax(194px, 140px));
             grid-template-rows: repeat(3, auto);
-            justify-content: center;
+            justify-content: space-around;
             column-gap: 3rem;
             row-gap: 2rem;
         }
@@ -35,11 +35,11 @@
             row-gap: 1.5rem;
         }
         &_logo {
-            @include media(1030) {
+            @include media(1050) {
                 grid-column: span 4;
                 justify-self: center;
             }
-            @include media(830) {
+            @include media(850) {
                 grid-column: span 2;
                 justify-self: center;
             }
