@@ -122,3 +122,6 @@ formBtn.addEventListener('click', (e) =>{
        body.classList.remove('active');
       }, 2000);
 })
+
+// AOS
+AOS.init();

@@ -15,16 +15,16 @@
         grid-template-columns: repeat(5, minmax(194px, 140px));
         justify-content: space-between;
         column-gap: 1rem;
-        @include media(1050) {
+        @include media(1030) {
             grid-template-columns: repeat(4, minmax(194px, 140px));
             grid-template-rows: repeat(2, auto);
             row-gap: 3rem;
         }
-        @include media(850) {
+        @include media(830) {
             grid-template-columns: repeat(2, minmax(194px, 140px));
             grid-template-rows: repeat(3, auto);
-            justify-content: space-around;
-            column-gap: 3rem;
+            justify-content: center;
+            column-gap: 5rem;
             row-gap: 2rem;
         }
         @include media(500) {
@@ -35,24 +35,24 @@
             row-gap: 1.5rem;
         }
         &_logo {
-            @include media(1050) {
+            @include media(1030) {
                 grid-column: span 4;
                 justify-self: center;
             }
-            @include media(850) {
+            @include media(830) {
                 grid-column: span 2;
                 justify-self: center;
+                text-align: center;
             }
             @include media(500) {
                 grid-column: span 1;
                 justify-self: center;
-                text-align: center;
             }
             img {
                 @include media(1030) {
                     width: 80%;
                 }
-                @include media(768) {
+                @include media(830) {
                     width: 60%;
                 }
             }
@@ -74,7 +74,7 @@
                         text-decoration: none;
                         color: $text;
                         font-size: 1.8rem;
-                        @include media(768) {
+                        @include media(830) {
                             font-size: 1.4rem;
                         }
                         @include media(500) {

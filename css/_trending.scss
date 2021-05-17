@@ -77,9 +77,8 @@
             row-gap: 2rem;
         }
         &_item {
-            cu
             img {
-                transition: .3s linear;
+                transition: .2s linear;
             }
             &:hover img {
                 filter: drop-shadow(0 3px 7px rgba(#326CFF, 0.5));
