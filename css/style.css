@@ -1233,7 +1233,7 @@ h1 {
         font-size: 1.1rem;
         -webkit-transition: .2s linear;
         transition: .2s linear; }
-        .modal__register_input a:hover {
+        .modal__register_input a:hover, .modal__register_input a:focus {
           color: rgba(50, 108, 255, 0.7); }
     .modal__register--user {
       background: url("../img/svg/input/user.svg") no-repeat left/12px; }

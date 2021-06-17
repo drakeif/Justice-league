@@ -154,7 +154,7 @@
                 color: $text;
                 font-size: 1.1rem;
                 transition: .2s linear;
-                &:hover {
+                &:hover, &:focus {
                     color: rgba($blue, .7);
                 }
             }

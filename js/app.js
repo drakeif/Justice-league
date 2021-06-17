@@ -85,7 +85,6 @@ const modal = document.querySelector('.modal'),
         regOpen.addEventListener('click', () => {
             reg.classList.add('active');
             body.classList.add('active');
-            formBtn.innerHTML = 'Sign In'
         });
         regClose.addEventListener('click', () => {
             reg.classList.remove('active');
@@ -121,6 +120,10 @@ formBtn.addEventListener('click', (e) =>{
        reg.classList.remove('active');
        body.classList.remove('active');
       }, 2000);
+      setTimeout(()=>{
+          alert('Дякуємо за реєстрацію, ви тепер ҐЄЙ')
+          window.location.reload();
+      },3000)
 })
 
 // AOS
